@@ -37,6 +37,7 @@ phdr:   dd 1           ; 0x1C |   ...       | p_type   | 01 00 00 00
         dq 2           ; 0x3C | e_shnum     | p_filesz | 02 00 00 00 00 00 00 00
         dq 2           ; 0x44 |             | p_memsz  | 02 00 00 00 00 00 00 00  
 setup: ; starts @ 0x4C - within p_align of PHDR
+    ; Shoutout Anonymous_ for moving this part to p_align!
     ; This payload just does an execve syscall to open /bin/sh
     ; Encrypted payload is pushed onto the stack. The last byte of the first
     ; dword is 48, which will be the first byte of the decrypted payload. 
