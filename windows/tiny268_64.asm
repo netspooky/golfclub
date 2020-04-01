@@ -6,14 +6,18 @@ BITS 32
 ; Notice: You might get an error like "Cannot be started 0xc000000005",
 ;         this is fine, just run it again.
 ; Versions:
+;  Bypass TinyPE detections Date: 20200330
+;   Size: 268 bytes (SHA1) c935b155c6cdeacc495d7b695e71f0229e9ce5fc
+;  First version at 268 bytes Date: 20200329
 ;   Size: 268 bytes (SHA1) 60e2c89d391052cc00145d277883e7feb6b67dd0 
+;  Original Version without optimization Date: 20200328
 ;   Size: 304 bytes (SHA1) bb59448a94acee171ea574e3a50dd6a2b75f4965 
 ;
 ; Breakdown of Sections - Listed in comments of the header 0x00:0x7C
 ;
 ;                     MC-- MD-- ME-- MF-- MG-- MH--
 ;           MA-- MB-- PA------- PB-- PC-- PD-------
-; 00000000: 4d5a 0000 5045 0000 4c01 0000 31f6 83ec  MZ..PE..L...1...
+; 00000000: 4d5a 0001 5045 0000 4c01 0000 31f6 83ec  MZ..PE..L...1...
 ;           MI-- MJ-- MK-- ML-- MM-- MN-- MO-------
 ;           PE------- PF------- PG-- PH-- OA-- OBOC
 ; 00000010: 1856 6a63 9090 eb06 6000 0301 0b01 6668  .Vjc....`.....fh
