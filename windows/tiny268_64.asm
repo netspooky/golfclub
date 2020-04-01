@@ -52,7 +52,7 @@ BITS 32
 ;--- Start of MZ Header --------------------------------------------------------
 mzhdr:
   dw "MZ"       ; 0x00 ; [MA] e_magic
-  dw 0          ; 0x02 ; [MB] e_cblp
+  dw 0x100      ; 0x02 ; [MB] e_cblp This value will bypass TinyPE detections!
 ;--- Start of PE Header --------------------------------------------------------
 pesig:
   dd "PE"       ; 0x04 ; [MC] e_cp [MD] e_crlc [PA] PE Signature
