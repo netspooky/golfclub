@@ -8,3 +8,5 @@ Check out the full ELF Binary Mangling Series here
 - https://tmpout.sh/2/11.html
 
 Also check out libgolf https://tmpout.sh/1/1.html and an 84 byte aarch64 ELF! https://tmpout.sh/2/14.html 
+
+And this talk I did on Binary Golf https://www.youtube.com/watch?v=VLmrsfSE-tA 
