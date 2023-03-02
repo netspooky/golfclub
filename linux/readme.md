@@ -1,4 +1,4 @@
-2023 Warning: A lot of these won't work on newer kernels (since 2020). See ELF Binary Mangling Part 4 for details: https://tmpout.sh/2/11.html
+2023 Warning: A lot of these won't work on [newer kernels](https://lore.kernel.org/all/20200327064820.12602-4-keescook@chromium.org/T/#u). See ELF Binary Mangling Part 4 for details: https://tmpout.sh/2/11.html
 
 Check out the full ELF Binary Mangling Series here
 
