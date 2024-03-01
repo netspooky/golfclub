@@ -1,5 +1,3 @@
-# echo-client.py
-
 import socket
 import time
 import re
