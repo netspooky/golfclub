@@ -270,7 +270,7 @@ typedef struct {
 } EFI_SYSTEM_TABLE;
 ```
 
-ConOut is a [EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL](https://uefi.org/specs/UEFI/2.10/12_Protocols_Console_Support.html#efi-simple-text-output-protocol) type, which looks like this
+ConOut is a [EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL](https://uefi.org/specs/UEFI/2.10/12_Protocols_Console_Support.html#efi-simple-text-output-protocol) type, which looks like this:
 ```c
 typedef struct _EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL {
  EFI_TEXT_RESET                    Reset;
@@ -310,7 +310,7 @@ UEFI has various debugging features built in. The documentation can be a little 
 
 The OS Dev wiki has some info on [debugging with gdb](https://wiki.osdev.org/Debugging_UEFI_applications_with_GDB) as well.
 
-To enable gdb debugging with QEMU, you need the `-s` flag in your command line arguments to QEMU.
+To enable gdb debugging with QEMU, you need the `-s` flag in your command line arguments to QEMU:
 ```sh
 /usr/bin/qemu-system-x86_64 \
   -drive if=pflash,format=raw,file=./OVMF.fd \
@@ -327,11 +327,11 @@ gdb root/example.efi
 (gdb) target remote :1234
 ```
 
-When I started working on my assembly UEFI app, I had trouble debugging it with gdb. I had originally been using the gdb extension [gef](https://github.com/hugsy/gef), but support for UEFI, especially handcrafted apps, is not really all there yet. It was only until I started using just vanilla gdb and nothing else, was I able to remotely debug in QEMU.
+When I started working on my assembly UEFI app, I had trouble debugging it with gdb. I had originally been using the gdb extension [gef](https://github.com/hugsy/gef), but support for UEFI, especially handcrafted apps, is not really all there yet. Only once I started using vanilla gdb was I able to remotely debug in QEMU.
 
 One of the issues that made it even more frustrating to debug was that I kept getting weird crashes that I believe were the result of my original tests, which possibly corrupted my OVMF image. After restoring to a known good OVMF.fd file, things started working again. I included this [OVMF.fd](OVMF.fd) file in the repo.
 
-You don't have to do this, but I added this to my `~/.gdbinit` file to enable running multiple commands on each line using gdb.
+You don't have to do this, but I added this to my `~/.gdbinit` file to enable running multiple commands on each line using gdb:
 ```python
 # multiple commands
 python
