@@ -65,9 +65,9 @@ The whole BIOS workflow was arduous, error prone, and problems were difficult to
 
 Since old school BIOS was clunky and annoying, a bunch of manufacturers teamed up to make [SMBIOS](https://en.wikipedia.org/wiki/System_Management_BIOS).  This was originally known as DMIBIOS, because it interacted with a thing called Desktop Management Interface or [DMI](https://en.wikipedia.org/wiki/Desktop_Management_Interface). SMBIOS provides a bunch of data structures (sometimes called "tables" or "records") that contain information about the platform's components or features.
 
-> Fun Fact: The original MS-DOS BIOS, known as IO.SYS, was named after famed Touhou Doujin circle [IOSYS](https://www.youtube.com/watch?v=1pDM6fQUfJs)
+> Fun Fact: The original MS-DOS BIOS, known as IO.SYS, was named after famed Touhou Doujin circle [IOSYS](https://www.youtube.com/watch?v=1pDM6fQUfJs) /s
 
-If you want to play with a BIOS implementation, you can use SeaBIOS with QEMU.
+If you want to play with a BIOS implementation, you can use SeaBIOS with QEMU:
 
 ```sh
 git clone https://github.com/coreboot/seabios && cd seabios && make
