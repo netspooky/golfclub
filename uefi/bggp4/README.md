@@ -878,7 +878,7 @@ There are some optimizations that I wanted to apply, but I didn't because I thou
 
 UEFI is a vast ecosystem, with many drivers and applications running on and endless number of devices. There is a lot of code in EDK2. It can be hard to find a good starting point, but once you find an approach that works you for, it starts to make sense. I hope that this writeup inspires you to play with the firmwares you rely on every day!
 
-Special thanks go to icequeen, who was also working on UEFI, and who had already solved some of the annoying programming problems that I had faced. I also want to thank rqu and ackmage for looking at gnu-efi with me and doing the first babysteps towards understanding UEFI. Also big thanks to Ulf Frisk and ilove2pwn_ for listening to me ramble about this.
+Special thanks go to ic3q33n, who was also working on UEFI, and who had already solved some of the annoying programming problems that I had faced. I also want to thank rqu and ackmage for looking at gnu-efi with me and doing the first babysteps towards understanding UEFI. Also big thanks to Ulf Frisk and ilove2pwn_ for listening to me ramble about this.
 
 Shoutouts: The BGGP Community, Haunted Computer Club (slop), tmp.0ut
 
