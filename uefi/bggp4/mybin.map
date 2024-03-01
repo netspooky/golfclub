@@ -1,0 +1,95 @@
+
+- NASM Map file ---------------------------------------------------------------
+
+Source file:  bggp4.uefi.asm
+Output file:  a
+
+-- Program origin -------------------------------------------------------------
+
+00000000
+
+-- Sections (summary) ---------------------------------------------------------
+
+Vstart            Start             Stop              Length    Class     Name
+               0                 0               1A4  000001A4  progbits  .text
+
+-- Sections (detailed) --------------------------------------------------------
+
+---- Section .text ------------------------------------------------------------
+
+class:     progbits
+length:                 1A4
+start:                    0
+align:     not defined
+follows:   not defined
+vstart:                   0
+valign:    not defined
+vfollows:  not defined
+
+-- Symbols --------------------------------------------------------------------
+
+---- No Section ---------------------------------------------------------------
+
+Value     Name
+00000008  ImageHandle_o
+00000010  SystemTable_o
+00000018  EFI_SYSTEM_TABLE_BootServices_o
+00000020  MessageOut_o
+00000028  LoadedImageProtocolInterface_o
+00000030  EFI_LOADED_IMAGE_PROTOCOL_GUID1_o
+00000038  EFI_LOADED_IMAGE_PROTOCOL_GUID2_o
+00000040  EFI_LOADED_IMAGE_PROTOCOL_DeviceHandle_o
+00000048  ImageSize_o
+00000050  SimpleFileSystemProtocolInterface_o
+00000058  gEfiSimpleFileSystemProtocolGuid1_o
+00000060  gEfiSimpleFileSystemProtocolGuid2_o
+00000068  DeviceFSRoot_o
+00000070  OriginalFileName_o
+00000078  OriginalFileHandle_o
+00000080  NewFileHandle_o
+000000A0  AllocatePoolBuffer_o
+00000040  EFI_SYSTEM_TABLE_ConOut
+00000008  EFI_SYSTEM_TABLE_ConOut_OutputString
+00000060  EFI_SYSTEM_TABLE_BootServices
+00000040  EFI_BOOT_SERVICES_AllocatePool
+00000048  EFI_BOOT_SERVICES_FreePool
+00000098  EFI_BOOT_SERVICES_HandleProtocol
+00000018  EFI_LOADED_IMAGE_PROTOCOL_DeviceHandle
+00000008  EFI_SIMPLE_FILE_SYSTEM_PROTOCOL_OpenVolume
+00000008  EFI_FILE_PROTOCOL_Open
+00000010  EFI_FILE_PROTOCOL_Close
+00000020  EFI_FILE_PROTOCOL_Read
+00000028  EFI_FILE_PROTOCOL_Write
+
+
+---- Section .text ------------------------------------------------------------
+
+Real              Virtual           Name
+               0                 0  mzHdr
+               4                 4  peHdr
+               C                 C  header1
+              1C                1C  oH
+              1E                1E  header3
+              30                30  coolFile
+              34                34  createAttributes
+              44                44  header4
+              5C                5C  header2
+              86                86  header0
+              8C                8C  iDirs
+              8C                8C  header5
+              BC                BC  sH
+              E4                E4  cStart
+              F0                F0  print4
+              F0                F0  handleLoadedImageProtocol
+              F0                F0  getDeviceHandle
+              F0                F0  handleSimpleFileSystemProtocol
+             106               106  OpenVolume
+             115               115  OpenOriginalFile
+             135               135  OpenNewFile
+             157               157  AllocatePool
+             16A               16A  ReadOriginalFile
+             17D               17D  WriteNewFile
+             190               190  CloseNewFile
+             19C               19C  bail
+             1A4               1A4  cEnd
+
