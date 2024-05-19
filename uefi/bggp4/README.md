@@ -181,7 +181,7 @@ Even though the `uefi_call_wrapper` is a fairly low level call, it still doesn't
 
 Two important things to know are the Handoff State and Calling Conventions.
 
-The [x64 Handoff State](https://uefi.org/specs/UEFI/2.10/02_Overview.html#handoff-state-2) is described in 2.3.4.1 in the spec. This describes the register state when an application first states, AKA when control is passed to `efi_main()`
+The [x64 Handoff State](https://uefi.org/specs/UEFI/2.10/02_Overview.html#handoff-state-2) is described in 2.3.4.1 in the spec. This describes the register state when an application first starts, AKA when control is passed to `efi_main()`
 
 | register | contents           |
 | -------- | ------------------ |
