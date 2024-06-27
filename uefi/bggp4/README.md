@@ -820,7 +820,7 @@ Table of how different register sizes affect `mov` in 64 bit mode. I cover this 
 mov rbx, rdx ; Moves data to all 64 bits of rbx
 mov ebx, edx ; Moves data to bottom 32 bits of rbx, clears top 32
 mov bx, dx   ; Moves data to bottom 16 bits of rbx, doesn't touch the rest.
-mov bl, bl   ; Moves data to bottom 8 bits of rbx, doesn't touch the rest.
+mov bl, dl   ; Moves data to bottom 8 bits of rbx, doesn't touch the rest.
 ```
 
 I used my assembly REPL [scare](https://github.com/netspooky/scare) to emulate some instructions so I can confirm it does what I expect it to.
