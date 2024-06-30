@@ -1,5 +1,8 @@
 # golfclub
 
+For all Binary Golf Grand Prix entries, visit https://github.com/binarygolf/bggp !
+
+
 Hey there! I made this repo to track source files for binary golf.
 
 ## What is binary golf?
