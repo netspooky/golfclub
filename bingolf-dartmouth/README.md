@@ -2,7 +2,7 @@
 
 Talk on binary golf at Dartmouth College 2025-10-23
 
-TODO: Upload example files
+See `src/` for files mentioned in the talk
 
 | File | Type | Note |
 |------|------|------|
